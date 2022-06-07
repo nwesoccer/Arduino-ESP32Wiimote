@@ -1049,6 +1049,10 @@ int TinyWiimoteAvailable() {
   return receivedDataRb.cnt;
 }
 
+bool TinyWiimoteConnected() {
+  return wiimoteConnected;
+}
+
 TinyWiimoteData TinyWiimoteRead() {
   TinyWiimoteData target;
   target.number = 0;
